@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #161b1e;
+}
+
+.quote-wrapper {
+  width: 370px;
+  height: 370px;
+  position: relative;
+  margin: 10vh auto 0;   
+}
+
+.text {
+  width: 100%;
+  height: 100%;  
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255,255,255, 1) 0%,
+    rgba(255,255,255, 1) 70%,
+    rgba(255,255,255, 0) 70.3%
+  );
+  position: relative;
+  margin: 0;
+  color: white;
+}
+
+.text p {
+  height: 100%;
+  font-size: 21px;
+  line-height: 1.25;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: left;
+  shape-outside: polygon(
+    0 0,
+    98% 0,
+    50% 6%,
+    23.4% 17.3%,
+    6% 32.6%,
+    0 50%,
+    6% 65.6%,
+    23.4% 82.7%,
+    50% 94%,
+    98% 100%,
+    0 100%
+  );
+  shape-margin: 7%;
+}
+
+.text p::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: right;
+  shape-outside: polygon(
+    2% 0%,
+    100% 0%,
+    100% 100%,
+    2% 100%,
+    50% 94%,
+    76.6% 82.7%,
+    94% 65.6%,
+    100% 50%,
+    94% 32.6%,
+    76.6% 17.3%,
+    50% 6%
+  );
+  shape-margin: 7%;
+}
+
+.quote-wrapper blockquote footer {
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  font-size: 17px;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.quote-wrapper::before {
+  content: "\201C";
+  font-size: 270px;
+  height: 82px;
+  
+  line-height: 1;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  z-index: 1;
+  font-family: sans-serif, serif;
+  color: #ccc;
+  opacity: 0.9;
+}
+
+@media (min-width: 850px) {
+  .quote-wrapper {
+    width: 450px;
+    height: 450px;
+  }
+
+  .quote-wrapper::before {
+    font-size: 300px;
+  }
+
+  .text p {
+    font-size: 26px;
+  }
+
+  .quote-wrapper blockquote footer {
+    bottom: 32px;
+  }
+}
+
+.buttons {
+    width: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    
+    button {
+      height: 38px;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      background-color: #333;
+      outline: none;
+      font-size: 0.85em;
+      padding: 8px 18px 6px 18px;
+      margin-top: 30px;
+      opacity: 1;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.9;
+      }
+      & #tweet-quote,
+      &#tumblr-quote {
+        float: left;
+        padding: 0px;
+        padding-top: 8px;
+        text-align: center;
+        font-size: 1.2em;
+        margin-right: 5px;
+        height: 38px;
+        width: 40px;
+        
+      }
+      &#new-quote {
+        float: right;
+      }
+    }
+  }
