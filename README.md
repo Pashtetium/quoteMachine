@@ -1,4 +1,4 @@
 # RandomQuoteMachine
  inspirational, styled quotes of famous people
 
-![] (quoteMachine.gif)
+! [] (quoteMachine.gif)
