@@ -1,4 +1,4 @@
 # RandomQuoteMachine
  inspirational, styled quotes of famous people
 
-![](/demos/quoteMachine.gif)
+![](https://github.com/Pashtetium/demos/blob/main/quoteMachine.gif?raw=true)
