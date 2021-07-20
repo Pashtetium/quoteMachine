@@ -1,9 +1,10 @@
 # RandomQuoteMachine
- Inspirational, styled quotes of famous people.
+### Inspirational quotes of famous people.
  Created with css only, no svg or images.
  
- ## Used technologies:
+### Used technologies:
  - JS and React
  - SCSS for styling
+ - Bootstrap for buttons and icons
 
 ![](https://github.com/Pashtetium/demos/blob/main/quoteMachine.gif?raw=true)
